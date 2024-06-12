@@ -37,7 +37,8 @@ function MainContent({ searchResult , addSearchKeyword, loadingStatus, errorStat
                             }}>link</span>
                     </div>
                 </div>
-            )))}     
+            )))}
+     
         </main>
     );
 };
