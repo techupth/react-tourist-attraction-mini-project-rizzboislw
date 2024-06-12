@@ -29,6 +29,7 @@ But I'll stick more to Tailwind in the future projects krub!*/
             flex-direction: column;
             justify-content: flex-end;
             margin-bottom: 3vh;
+            margin-top: 2vh;
             
                 .header-main-topic {
                     font-size: 3rem;
