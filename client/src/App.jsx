@@ -1,7 +1,17 @@
-import "./App.css";
+import "./App.css"; 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/homepage.jsx";
 
 function App() {
-  return <div className="App">{/* Start coding here */}</div>;
+  return (
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />}/>
+    </Routes>
+    </BrowserRouter>
+    </>
+  )
 }
 
 export default App;
