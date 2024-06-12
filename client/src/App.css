@@ -15,6 +15,7 @@ But I'll stick more to Tailwind in the future projects krub!*/
     width: auto;
     min-height: 100vh;
     background-color: white;
+    padding-top: 1.5vw;
 
         .status-message {
             font-size: 5vw;
@@ -23,19 +24,21 @@ But I'll stick more to Tailwind in the future projects krub!*/
     
         .main-page-header{
             width: 100%;
-            height: 20vh;
+            min-height: 10vh;
             background-color: white;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-            margin-bottom: 3vh;
-            margin-top: 2vh;
+            justify-content: center;
+            margin-bottom: 1vh;
+            
             
                 .header-main-topic {
-                    font-size: 3rem;
+                    min-height: 6vh;
+                    font-size: 5vw;
                     color: #2C9ADA;
                     text-align: center;
-                    font-weight: 500;            
+                    align-content:end;
+                    font-weight: 500;           
                 }
 
                 .search-section {
@@ -57,26 +60,24 @@ But I'll stick more to Tailwind in the future projects krub!*/
                         padding: 2% 10%;
                                             
                         .searchbar-title {
-                            font-size: 1.7vw;
+                            font-size: 2vw;
                         }
                         
                         #searchbar {
                             display: block;
                             border-bottom: 1px solid #D0D0D0;
                             width: 100%;
-                            height: 2.5vw;
+                            height: 3vw;
                             text-align: center;
-                            font-size: 1.6vw;
+                            font-size: 2.2vw;
+                            padding-bottom: 0.2vw;
                         }
 
                         #searchbar:focus {
                             outline: none;
                         }
-                    }
-
-                    
-                }
-                
+                    }       
+                }              
         }
 
         .main-page-content {
@@ -94,7 +95,8 @@ But I'll stick more to Tailwind in the future projects krub!*/
                 padding: 1%;
                 margin-bottom: 2%;
                 position: relative;
-                
+                transition: all 0.3s ease-in-out;
+
                 .content-preview-image {
                     width: 30%;
                     height: 25vw;
@@ -103,15 +105,35 @@ But I'll stick more to Tailwind in the future projects krub!*/
                     object-fit: fill;
                 }
 
+
                 .content-detail {               
                     width: 65%;
                     height: 100%;
                     align-items: flex-start;
-                   
+
                     .content-title {
-                        font-size: 2.3vw;
+                        font-size: 2vw;
                         margin: 0.3vw;
+                        transition: all 0.4s ease-in-out;
+                        
+                        a {
+                            display: inline-block;
+                            transition: all 0.4s ease-in-out;
+                        }
                     }
+
+                    .content-title:hover {
+                        transition: all 0.4s ease-in-out;
+                        background: black;
+                    }
+
+                    .content-title:hover a {
+                        transition: all 0.4s ease-in-out;
+                        transform: translateX(10px);
+                        color: white;
+                    }
+
+                    
 
                     .content-description {
                         color: #474747;
@@ -126,22 +148,34 @@ But I'll stick more to Tailwind in the future projects krub!*/
                         text-decoration: underline;
                         font-size: 1.4vw;
                         margin: 0.3vw;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .find-more-link:hover {
+                        transition: all 0.3s ease-in-out;
+                        scale: 1.05;
                     }
 
                     .content-categories {
                         margin: 0.3vw;
                         color: #474747;
                         font-size: 1.4vw;
-   
+                        
                         .content-tag {
-                            display: inline-block;
-                            padding: 0 5px;
+                            display: inline-block;         
                             text-decoration: underline;
                             cursor: pointer;     
+                            margin: 0 0.7vw;
+                            transition: all 0.3s ease-in-out;
                         }
 
-                    }
-                    
+                        .content-tag:hover {
+                            transition: all 0.3s ease-in-out;
+                            transform: translateY(-0.1vh);
+                            color: black;
+                        }
+                    }    
+                                                                     
                     .content-more-images {
                         margin: 0.5vw 0.3vw 0.3vw 0.3vw;
 
@@ -153,21 +187,35 @@ But I'll stick more to Tailwind in the future projects krub!*/
                             border-radius: 10px;
                             overflow: hidden;
                             object-fit: cover;
+                            transition: all 0.2s ease-in-out;
+                        }    
+                        
+                        .more-image:hover {
+                            transition: all 0.2s ease-in-out;
+                            scale: 1.05;
                             
-                        }                      
+                        }
                     }
 
                     .material-symbols-outlined {
                         position: absolute;
-                        bottom: 10%;
+                        bottom: 5%;
                         right: 5%;
                         color: #2F9CDB;
-                        scale: 2.3;
+                        font-size: 5vw;
                         transform: rotate(-50deg);
                         cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .material-symbols-outlined:hover {
+                        scale: 1.2;
+                        transition: all 0.3s ease-in-out;
                     }
                 }
             }
+
+            
 
 
             

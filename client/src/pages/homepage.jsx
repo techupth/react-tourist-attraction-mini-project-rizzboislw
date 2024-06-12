@@ -39,7 +39,6 @@ function HomePage() {
         fetchServerData();
     }, [collectInput]);
 
-
     return (
         <div className="main-page-container" >
             <Header getInputResult={getInputResult} collectInput={collectInput} />
